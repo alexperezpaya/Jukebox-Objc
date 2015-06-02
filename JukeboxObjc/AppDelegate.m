@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "iTunesRequest+Lookup.h"
+#import "NetworkTask.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NetworkTask * task = [[ItunesRequest sharedInstance] lookupById:6906197 entity:@"album" media:@"music" limit:10];
+    [task addSuccessBlock:^(NetworkTask *task, id data) {
+        
+    }];
+    [task addFailureBlock:^(NetworkTask *task, NSError *error) {
+    
+    }];
+
     return YES;
 }
 

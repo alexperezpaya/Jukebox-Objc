@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		268C26509B45438FAC3C95CC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA156ADB689E7DCFDC642340 /* libPods.a */; };
 		901E20EA1B1CEE3A0030727F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E20E91B1CEE3A0030727F /* main.m */; };
 		901E20ED1B1CEE3A0030727F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E20EC1B1CEE3A0030727F /* AppDelegate.m */; };
-		901E20F01B1CEE3A0030727F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E20EF1B1CEE3A0030727F /* ViewController.m */; };
+		901E20F01B1CEE3A0030727F /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E20EF1B1CEE3A0030727F /* CollectionViewController.m */; };
 		901E20F31B1CEE3A0030727F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901E20F11B1CEE3A0030727F /* Main.storyboard */; };
 		901E20F51B1CEE3A0030727F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 901E20F41B1CEE3A0030727F /* Images.xcassets */; };
 		901E20F81B1CEE3A0030727F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 901E20F61B1CEE3A0030727F /* LaunchScreen.xib */; };
 		901E21041B1CEE3A0030727F /* JukeboxObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 901E21031B1CEE3A0030727F /* JukeboxObjcTests.m */; };
+		90DB44751B1CFFEE00D32CF1 /* UIImage+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB44741B1CFFEE00D32CF1 /* UIImage+Cache.m */; };
+		90DB447A1B1D08C500D32CF1 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DB44791B1D08C500D32CF1 /* Album.m */; };
+		90DEA8631B1E1B1D001DA15E /* NetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEA8621B1E1B1D001DA15E /* NetworkTask.m */; };
+		90DEA8661B1E1D94001DA15E /* ItunesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEA8651B1E1D94001DA15E /* ItunesRequest.m */; };
+		90DEA86A1B1E1F3C001DA15E /* ItunesRequest+Lookup.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DEA8691B1E1F3C001DA15E /* ItunesRequest+Lookup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +38,27 @@
 		901E20E91B1CEE3A0030727F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		901E20EB1B1CEE3A0030727F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		901E20EC1B1CEE3A0030727F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		901E20EE1B1CEE3A0030727F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		901E20EF1B1CEE3A0030727F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		901E20EE1B1CEE3A0030727F /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		901E20EF1B1CEE3A0030727F /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		901E20F21B1CEE3A0030727F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		901E20F41B1CEE3A0030727F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		901E20F71B1CEE3A0030727F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		901E20FD1B1CEE3A0030727F /* JukeboxObjcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JukeboxObjcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		901E21021B1CEE3A0030727F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		901E21031B1CEE3A0030727F /* JukeboxObjcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JukeboxObjcTests.m; sourceTree = "<group>"; };
+		90DB44731B1CFFEE00D32CF1 /* UIImage+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Cache.h"; sourceTree = "<group>"; };
+		90DB44741B1CFFEE00D32CF1 /* UIImage+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Cache.m"; sourceTree = "<group>"; };
+		90DB44781B1D08C500D32CF1 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		90DB44791B1D08C500D32CF1 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		90DEA8611B1E1B1D001DA15E /* NetworkTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTask.h; sourceTree = "<group>"; };
+		90DEA8621B1E1B1D001DA15E /* NetworkTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTask.m; sourceTree = "<group>"; };
+		90DEA8641B1E1D94001DA15E /* ItunesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItunesRequest.h; sourceTree = "<group>"; };
+		90DEA8651B1E1D94001DA15E /* ItunesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItunesRequest.m; sourceTree = "<group>"; };
+		90DEA8681B1E1F3C001DA15E /* ItunesRequest+Lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ItunesRequest+Lookup.h"; sourceTree = "<group>"; };
+		90DEA8691B1E1F3C001DA15E /* ItunesRequest+Lookup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ItunesRequest+Lookup.m"; sourceTree = "<group>"; };
+		BC2AD2E4AB66E107BC32EBEB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		EA156ADB689E7DCFDC642340 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED16ABD0BB65FC5886FA776C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268C26509B45438FAC3C95CC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +86,8 @@
 				901E20E61B1CEE3A0030727F /* JukeboxObjc */,
 				901E21001B1CEE3A0030727F /* JukeboxObjcTests */,
 				901E20E51B1CEE3A0030727F /* Products */,
+				CD3FA798CFDE9255A84C4CDF /* Pods */,
+				A9BAAF8E917BD38FFE0E126C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +103,8 @@
 		901E20E61B1CEE3A0030727F /* JukeboxObjc */ = {
 			isa = PBXGroup;
 			children = (
-				901E20EB1B1CEE3A0030727F /* AppDelegate.h */,
-				901E20EC1B1CEE3A0030727F /* AppDelegate.m */,
-				901E20EE1B1CEE3A0030727F /* ViewController.h */,
-				901E20EF1B1CEE3A0030727F /* ViewController.m */,
-				901E20F11B1CEE3A0030727F /* Main.storyboard */,
-				901E20F41B1CEE3A0030727F /* Images.xcassets */,
-				901E20F61B1CEE3A0030727F /* LaunchScreen.xib */,
+				90DB44701B1CF99F00D32CF1 /* Source */,
+				90DB44711B1CF9AC00D32CF1 /* Resources */,
 				901E20E71B1CEE3A0030727F /* Supporting Files */,
 			);
 			path = JukeboxObjc;
@@ -119,6 +136,94 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		90DB44701B1CF99F00D32CF1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				90DEA8671B1E1DEC001DA15E /* Network */,
+				90DB44771B1D056500D32CF1 /* Models */,
+				90DEA86B1B1E221A001DA15E /* Parsers */,
+				901E20EB1B1CEE3A0030727F /* AppDelegate.h */,
+				901E20EC1B1CEE3A0030727F /* AppDelegate.m */,
+				90DB44721B1CF9BA00D32CF1 /* ViewControllers */,
+				90DB44761B1D03D700D32CF1 /* Extensions */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		90DB44711B1CF9AC00D32CF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				901E20F11B1CEE3A0030727F /* Main.storyboard */,
+				901E20F41B1CEE3A0030727F /* Images.xcassets */,
+				901E20F61B1CEE3A0030727F /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		90DB44721B1CF9BA00D32CF1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				901E20EE1B1CEE3A0030727F /* CollectionViewController.h */,
+				901E20EF1B1CEE3A0030727F /* CollectionViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		90DB44761B1D03D700D32CF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90DB44731B1CFFEE00D32CF1 /* UIImage+Cache.h */,
+				90DB44741B1CFFEE00D32CF1 /* UIImage+Cache.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		90DB44771B1D056500D32CF1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				90DB44781B1D08C500D32CF1 /* Album.h */,
+				90DB44791B1D08C500D32CF1 /* Album.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		90DEA8671B1E1DEC001DA15E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				90DEA8611B1E1B1D001DA15E /* NetworkTask.h */,
+				90DEA8621B1E1B1D001DA15E /* NetworkTask.m */,
+				90DEA8641B1E1D94001DA15E /* ItunesRequest.h */,
+				90DEA8651B1E1D94001DA15E /* ItunesRequest.m */,
+				90DEA8681B1E1F3C001DA15E /* ItunesRequest+Lookup.h */,
+				90DEA8691B1E1F3C001DA15E /* ItunesRequest+Lookup.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		90DEA86B1B1E221A001DA15E /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		A9BAAF8E917BD38FFE0E126C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA156ADB689E7DCFDC642340 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3FA798CFDE9255A84C4CDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED16ABD0BB65FC5886FA776C /* Pods.debug.xcconfig */,
+				BC2AD2E4AB66E107BC32EBEB /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 901E21071B1CEE3A0030727F /* Build configuration list for PBXNativeTarget "JukeboxObjc" */;
 			buildPhases = (
+				BA277AC61A35C014C08C7D38 /* Check Pods Manifest.lock */,
 				901E20E01B1CEE3A0030727F /* Sources */,
 				901E20E11B1CEE3A0030727F /* Frameworks */,
 				901E20E21B1CEE3A0030727F /* Resources */,
+				B5C1C1E85570BD322DDE42F1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,14 +321,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5C1C1E85570BD322DDE42F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA277AC61A35C014C08C7D38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		901E20E01B1CEE3A0030727F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				901E20F01B1CEE3A0030727F /* ViewController.m in Sources */,
+				90DEA8661B1E1D94001DA15E /* ItunesRequest.m in Sources */,
+				901E20F01B1CEE3A0030727F /* CollectionViewController.m in Sources */,
 				901E20ED1B1CEE3A0030727F /* AppDelegate.m in Sources */,
+				90DB44751B1CFFEE00D32CF1 /* UIImage+Cache.m in Sources */,
+				90DB447A1B1D08C500D32CF1 /* Album.m in Sources */,
 				901E20EA1B1CEE3A0030727F /* main.m in Sources */,
+				90DEA8631B1E1B1D001DA15E /* NetworkTask.m in Sources */,
+				90DEA86A1B1E1F3C001DA15E /* ItunesRequest+Lookup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +490,7 @@
 		};
 		901E21081B1CEE3A0030727F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED16ABD0BB65FC5886FA776C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JukeboxObjc/Info.plist;
@@ -355,6 +501,7 @@
 		};
 		901E21091B1CEE3A0030727F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2AD2E4AB66E107BC32EBEB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JukeboxObjc/Info.plist;
@@ -416,6 +563,7 @@
 				901E21091B1CEE3A0030727F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		901E210A1B1CEE3A0030727F /* Build configuration list for PBXNativeTarget "JukeboxObjcTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +572,7 @@
 				901E210C1B1CEE3A0030727F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

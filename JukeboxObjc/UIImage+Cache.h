@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIImage+Cache.h
 //  JukeboxObjc
 //
 //  Created by Alejandro on 01/06/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIImage (Cache)
 
++ (UIImage *)loadImageURLWithCache:(NSURL *)url;
 
 @end
-

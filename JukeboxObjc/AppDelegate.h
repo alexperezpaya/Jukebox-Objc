@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ItunesRequest.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
