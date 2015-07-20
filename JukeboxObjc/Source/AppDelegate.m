@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "iTunesRequest+Lookup.h"
-#import "NetworkTask.h"
+#import "LookupAlbumInteractor.h"
 
 @interface AppDelegate ()
 
@@ -20,14 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NetworkTask * task = [[ItunesRequest sharedInstance] lookupById:6906197 entity:@"album" media:@"music" limit:10];
-    [task addSuccessBlock:^(NetworkTask *task, id data) {
-        
-    }];
-    [task addFailureBlock:^(NetworkTask *task, NSError *error) {
-    
-    }];
-
+    [self appereance];
     return YES;
 }
 
@@ -51,6 +43,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)appereance {
+    [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent animated:YES];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName: [UIColor whiteColor]
+                                                           }];
 }
 
 @end

@@ -14,9 +14,9 @@ static NSString * const kLookupEndpoint = @"/lookup";
 @implementation ItunesRequest (Lookup)
 
 - (NetworkTask *)lookupById:(NSInteger)identifier entity:(NSString *)entity media:(NSString *)media limit:(NSInteger)limit {
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    AFHTTPRequestOperationManager * manager = [AFHTTPRequestOperationManager manager];
     
-    NSDictionary *parameters = @{
+    NSDictionary * parameters = @{
         @"id": [NSNumber numberWithInteger: identifier],
         @"entity": entity,
         @"media": media,
@@ -28,11 +28,11 @@ static NSString * const kLookupEndpoint = @"/lookup";
     NSString * path = [[NSString alloc] initWithFormat: @"%@%@", self.apiRoot, kLookupEndpoint];
     
     [manager POST:path parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [task setStatusCode:[[operation response] statusCode]];
         [task finishTaskWithData:responseObject];
-        [task setStatusCode:[[operation response] statusCode]];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        [task finishTaskWithError:error];
         [task setStatusCode:[[operation response] statusCode]];
+        [task finishTaskWithError:error];
     }];
      
     return task;

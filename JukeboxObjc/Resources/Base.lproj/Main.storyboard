@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="artistCell" textLabel="ic6-dg-bGu" detailTextLabel="TOQ-Vl-3X3" imageView="fzf-hj-etr" rowHeight="150" style="IBUITableViewCellStyleSubtitle" id="Qnu-h9-InQ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="artistCell" textLabel="ic6-dg-bGu" detailTextLabel="TOQ-Vl-3X3" imageView="fzf-hj-etr" rowHeight="150" style="IBUITableViewCellStyleSubtitle" id="Qnu-h9-InQ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qnu-h9-InQ" id="INR-w6-mK4">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -21,13 +21,13 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Jack Ü" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ic6-dg-bGu">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="1 Album - 12 tracks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TOQ-Vl-3X3">
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="jacku" id="fzf-hj-etr">
@@ -43,10 +43,56 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Jukebox" id="7O6-Hd-u6c"/>
+                    <connections>
+                        <segue destination="yuz-xc-zEa" kind="show" identifier="showArtistCollection" id="NRY-0s-YaA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJB-G4-6dS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="186"/>
+            <point key="canvasLocation" x="1009" y="186"/>
+        </scene>
+        <!--Artist View Controller-->
+        <scene sceneID="rdt-To-aaE">
+            <objects>
+                <tableViewController id="yuz-xc-zEa" customClass="ArtistViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qzy-1g-YTS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="albumCell" textLabel="SRy-BZ-QAt" detailTextLabel="aT2-y0-nnF" imageView="osa-WP-1I0" rowHeight="150" style="IBUITableViewCellStyleSubtitle" id="htg-qP-7zs">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htg-qP-7zs" id="cFc-Mn-o9X">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Skrillex and Diplo present Jack Ü" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SRy-BZ-QAt">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="12 tracks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aT2-y0-nnF">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="jacku" id="osa-WP-1I0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yuz-xc-zEa" id="aKd-4C-eZy"/>
+                            <outlet property="delegate" destination="yuz-xc-zEa" id="i41-lH-o80"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4O-Jf-Fog" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="186"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HFU-ou-pE7">
@@ -64,7 +110,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1N-fn-SMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="186"/>
+            <point key="canvasLocation" x="279" y="186"/>
         </scene>
     </scenes>
     <resources>
